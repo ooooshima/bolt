@@ -1,0 +1,231 @@
+body {
+  font-family: lato;
+  font-family: Raleway;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header--inner {
+  padding: 15px 0;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.fa__logo {
+  float: left;
+}
+
+.header__link {
+  float: right;
+  padding: 14px 12px;
+}
+
+.link__btn {
+  border-radius: 3%;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #74cfae;
+}
+
+.link__btn:hover {
+  color: #333;
+  transition-duration: 0.3s;
+}
+
+.title {
+  width: 100%;
+}
+
+.title--inner {
+  padding: 250px 0;
+  text-align: center;
+}
+
+.title__heading {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+  margin-bottom: 20px;
+}
+
+.title__paragraph {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+.explanation {
+  width: 100%;
+  background-color: #74cfae;
+}
+
+.explanation--inner {
+  padding-top: 50px;
+}
+
+.explanation__img {
+  float: left;
+}
+
+.explanation__text {
+  float: right;
+  width: 720px;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+}
+
+.explanation__heading {
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.explanation__paragraph {
+  font-size: 20px;
+}
+
+.contents {
+  width: 100%;
+}
+
+.contents--inner {
+  padding: 60px 0 70px 0;
+  text-align: center;
+}
+
+.contents__title {
+  font-size: 24px;
+}
+
+.contents__wrapper {
+  padding: 40px 0 90px 0;
+}
+
+.ContentsItem {
+  display: block;
+  float: left;
+  opacity: 0.7;
+}
+
+.ContentsItem:hover {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.ContentsItem:nth-child(-n+3) {
+  margin: 0  0 80px 100px;
+}
+
+.ContentsItem:nth-child(n+4) {
+  margin-left: 100px;
+}
+
+.ContentsItem:nth-child(1), .ContentsItem:nth-child(4) {
+  margin-left: 0;
+}
+
+.contents__paragraph {
+  display: inline-block;
+  width: 550px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.contact__link {
+  display: inline-block;
+  padding: 14px 20px;
+  margin-left: 90px;
+  vertical-align: top;
+}
+
+.SkillsProgress {
+  width: 100%;
+  background-color: #4e4e4e;
+}
+
+.SkillsProgress--inner {
+  padding: 70px 0 100px 0;
+  text-align: center;
+}
+
+.SkillsProgress__title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.skill__wrapper {
+  display: inline-block;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+.skill__item {
+  float: left;
+  margin-left:180px;
+}
+
+.skill__item:first-child {
+  margin-left: 0;
+}
+
+.SkillName {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation--inner {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.fa__nav {
+  display: inline-flex;
+  width: 185px;
+  height: 90px;
+  font-size: 38px;
+  color: #74cfae;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa__nav:hover {
+  background-color: #fff;
+  transition-duration: 0.3s;
+}
+
+.footer {
+  width: 100%;
+  background-color: #74cfae;
+}
+
+.footer--inner {
+  padding: 20px 0 25px 0;
+}
+
+.CraftedBy {
+  float: right;
+  font-size: 16px;
+  color: #fff;
+}
