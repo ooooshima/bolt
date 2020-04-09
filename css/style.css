@@ -27,8 +27,12 @@ body {
   content: "";
 }
 
-.fa__logo {
+.logo__link {
   float: left;
+}
+
+.fa__logo {
+  color: #4e4e4e;
 }
 
 .header__link {
@@ -114,29 +118,29 @@ body {
 }
 
 .contents__wrapper {
-  padding: 40px 0 90px 0;
+  margin: 40px 0 90px 0;
 }
 
-.ContentsItem {
+.contents__item {
   display: block;
   float: left;
   opacity: 0.7;
 }
 
-.ContentsItem:hover {
+.contents__item:hover {
   opacity: 1;
   transition-duration: 0.3s;
 }
 
-.ContentsItem:nth-child(-n+3) {
-  margin: 0  0 80px 100px;
-}
-
-.ContentsItem:nth-child(n+4) {
+.contents__item:nth-child(-n+3) {
   margin-left: 100px;
 }
 
-.ContentsItem:nth-child(1), .ContentsItem:nth-child(4) {
+.contents__item:nth-child(n+4) {
+  margin: 80px  0 0 100px;
+}
+
+.contents__item:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -154,24 +158,24 @@ body {
   vertical-align: top;
 }
 
-.SkillsProgress {
+.skills-progress {
   width: 100%;
   background-color: #4e4e4e;
 }
 
-.SkillsProgress--inner {
+.skills-progress--inner {
   padding: 70px 0 100px 0;
   text-align: center;
 }
 
-.SkillsProgress__title {
+.skills-progress__title {
   font-size: 24px;
   color: #fff;
+  margin-bottom: 60px;
 }
 
 .skill__wrapper {
   display: inline-block;
-  padding-top: 60px;
   margin: 0 auto;
 }
 
@@ -184,7 +188,7 @@ body {
   margin-left: 0;
 }
 
-.SkillName {
+.skill__name {
   font-size: 16px;
   color: #fff;
   margin-top: 10px;
@@ -202,7 +206,7 @@ body {
 .fa__nav {
   display: inline-flex;
   width: 185px;
-  height: 90px;
+  padding: 20px 0;
   font-size: 38px;
   color: #74cfae;
   text-decoration: none;
@@ -224,7 +228,7 @@ body {
   padding: 20px 0 25px 0;
 }
 
-.CraftedBy {
+.crafted-by {
   float: right;
   font-size: 16px;
   color: #fff;
