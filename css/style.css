@@ -44,13 +44,18 @@ body {
   border-radius: 3%;
   font-size: 12px;
   color: #fff;
+  transition: color 0.3s;
   text-decoration: none;
   background-color: #74cfae;
 }
 
 .link__btn:hover {
   color: #333;
-  transition-duration: 0.3s;
+  transition: color 0.3s;
+}
+
+main {
+  padding-top: 78px;
 }
 
 .title {
@@ -125,11 +130,12 @@ body {
   display: block;
   float: left;
   opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
 .contents__item:hover {
   opacity: 1;
-  transition-duration: 0.3s;
+  transition: opacity 0.3s;
 }
 
 .contents__item:nth-child(-n+3) {
@@ -212,11 +218,12 @@ body {
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s;
 }
 
 .fa__nav:hover {
   background-color: #fff;
-  transition-duration: 0.3s;
+  transition: background-color 0.3s;
 }
 
 .footer {
@@ -229,7 +236,7 @@ body {
 }
 
 .crafted-by {
-  float: right;
   font-size: 16px;
   color: #fff;
+  text-align: right;
 }
