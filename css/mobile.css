@@ -1,0 +1,129 @@
+@media screen and (max-width: 767px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .inner {
+    max-width: 767px;
+    width: 97%;
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .hamburger__icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 48px;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
+  .hamburger__icon .icon__interior {
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
+  .hamburger__icon .icon__interior:before, 
+  .hamburger__icon .icon__interior:after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .hamburger__icon .icon__interior:before {
+    top: -7px;
+  }
+
+  .hamburger__icon .icon__interior:after {
+    bottom: -7px;
+  }
+
+  .title--inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .title__heading {
+    font-size: 80px;
+  }
+
+  .explanation--inner {
+    padding-bottom: 25px;
+  }
+  
+  .explanation__img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  
+  .explanation__text {
+    float: none;
+    width: 84%;
+    margin: 20px auto 0 auto;
+  }
+  
+  .contents__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    font-size: 0;
+  }
+  
+  .contents__item {
+    float: none;
+  }
+  
+  .contents__item:nth-child(-n+3) ,
+  .contents__item:nth-child(n+4) {
+    margin: 0;
+  }
+  
+  .contents__item:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  
+  .contents__paragraph {
+    width: 92%;
+    margin: 0 auto 40px auto;
+  }
+  
+  .contact__link {
+    margin: 0 auto;
+  }
+  
+  .skill__item {
+    float: none;
+    margin: 0 auto 88px auto;;
+  }
+  
+  .skill__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .navigation--inner {
+    padding: 50px 0;
+  }
+
+  .fa__nav {
+    display: block;
+    width: 100%;
+  }
+  
+}
+
