@@ -1,8 +1,11 @@
 body {
   font-family: lato;
-  font-family: Raleway;
   color: #333;
   background-color: #f2f2f2;
+}
+
+.is-raleway {
+  font-family: Raleway;
 }
 
 .header {
@@ -52,6 +55,10 @@ body {
 .link__btn:hover {
   color: #333;
   transition: color 0.3s;
+}
+
+.hamburger__icon {
+  display: none;
 }
 
 main {
@@ -124,10 +131,10 @@ main {
 
 .contents__wrapper {
   margin: 40px 0 90px 0;
+  font-size: 0;
 }
 
 .contents__item {
-  display: block;
   float: left;
   opacity: 0.7;
   transition: opacity 0.3s;
@@ -148,6 +155,10 @@ main {
 
 .contents__item:nth-child(3n+1) {
   margin-left: 0;
+}
+
+.item__link {
+  display: block;
 }
 
 .contents__paragraph {
@@ -182,7 +193,6 @@ main {
 
 .skill__wrapper {
   display: inline-block;
-  margin: 0 auto;
 }
 
 .skill__item {
@@ -211,19 +221,24 @@ main {
 
 .fa__nav {
   display: inline-flex;
-  width: 185px;
-  padding: 20px 0;
-  font-size: 38px;
-  color: #74cfae;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
   transition: background-color 0.3s;
 }
 
 .fa__nav:hover {
   background-color: #fff;
   transition: background-color 0.3s;
+}
+
+.nav__link {
+  display: block;
+  width: 176px;
+  padding: 20px 0;
+}
+
+.is-turquoise {
+  color: #74cfae;
+  font-size: 38px;
+  text-decoration: none;
 }
 
 .footer {
@@ -242,3 +257,205 @@ main {
   margin-right: 15px;
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .inner {
+    max-width: 1199px;
+    width: 97%;
+  }
+
+  .explanation--inner {
+    padding-bottom: 25px;
+  }
+
+  .explanation__img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .explanation__text {
+    float: none;
+    width: 84%;
+    margin: 20px auto 0 auto;
+  }
+
+  .contents__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    font-size: 0;
+  }
+
+  .contents__item {
+    float: none;
+  }
+
+  .contents__item:nth-child(-n+3) ,
+  .contents__item:nth-child(n+4) {
+    margin: 0;
+  }
+
+  .contents__item:nth-child(4n) {
+    margin-top: 80px;
+  }
+
+  .contents__paragraph {
+    width: 94%;
+    margin: 0 auto 40px auto;
+  }
+
+  .contact__link {
+    margin: 0 auto;
+  }
+
+  .skill__item {
+    float: none;
+    margin: 0 auto 88px auto;;
+  }
+
+  .skill__item:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .inner {
+    max-width: 767px;
+    width: 97%;
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .hamburger__icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 48px;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
+  .hamburger__icon .icon__interior {
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
+  .hamburger__icon .icon__interior:before, 
+  .hamburger__icon .icon__interior:after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .hamburger__icon .icon__interior:before {
+    top: -7px;
+  }
+
+  .hamburger__icon .icon__interior:after {
+    bottom: -7px;
+  }
+
+  .title--inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .title__heading {
+    font-size: 80px;
+  }
+
+  .explanation--inner {
+    padding-bottom: 25px;
+  }
+  
+  .explanation__img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  
+  .explanation__text {
+    float: none;
+    width: 84%;
+    margin: 20px auto 0 auto;
+  }
+  
+  .contents__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    font-size: 0;
+  }
+  
+  .contents__item {
+    float: none;
+  }
+  
+  .contents__item:nth-child(-n+3) ,
+  .contents__item:nth-child(n+4) {
+    margin: 0;
+  }
+  
+  .contents__item:nth-child(4n) {
+    margin-top: 80px;
+  }
+  
+  .contents__paragraph {
+    width: 92%;
+    margin: 0 auto 40px auto;
+  }
+  
+  .contact__link {
+    margin: 0 auto;
+  }
+  
+  .skill__item {
+    float: none;
+    margin: 0 auto 88px auto;;
+  }
+  
+  .skill__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .navigation--inner {
+    padding: 50px 0;
+  }
+
+  .fa__nav {
+    display: block;
+  }
+
+  .nav__link {
+    width: 100%;
+  }
+  
+}

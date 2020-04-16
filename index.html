@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
@@ -31,7 +29,7 @@
     <main>
       <div class="title">
         <div class="inner title--inner">
-          <h1 class="title__heading">Bolt Theme</h1>
+          <h1 class="title__heading is-raleway">Bolt Theme</h1>
           <p class="title__paragraph">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
@@ -40,7 +38,7 @@
         <div class="inner explanation--inner clearfix">
           <img src="./img/iphone.png" alt="image of iphone" class="explanation__img">
           <div class="explanation__text">
-            <h2 class="explanation__heading">WHAT WE CAN DO?</h2>
+            <h2 class="explanation__heading is-raleway">WHAT WE CAN DO?</h2>
             <p class="explanation__paragraph">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
@@ -50,27 +48,39 @@
 
       <article class="contents">
         <div class="inner contents--inner">
-          <h2 class="contents__title">OUR LATEST WORK</h2>
-          <div class="contents__wrapper clearfix">
-            <a href="" class="contents__item">
-              <img src="./img/01.jpg" alt="image of work01">
-            </a>
-            <a href="" class="contents__item">
-              <img src="./img/02.jpg" alt="image of work02">
-            </a>
-            <a href="" class="contents__item">
-              <img src="./img/03.jpg" alt="image of work03">
-            </a>
-            <a href="" class="contents__item">
-              <img src="./img/04.jpg" alt="image of work04">
-            </a>
-            <a href="" class="contents__item">
-              <img src="./img/05.jpg" alt="image of work05">
-            </a>
-            <a href="" class="contents__item">
-              <img src="./img/06.jpg" alt="image of work06">
-            </a>
-          </div>
+          <h2 class="contents__title is-raleway">OUR LATEST WORK</h2>
+          <ul class="contents__wrapper clearfix">
+            <li class="contents__item">
+              <a href="" class="item__link">
+                <img src="./img/01.jpg" alt="image of work01">
+              </a>
+            </li>
+            <li class="contents__item">
+              <a href="" class="item__link">
+                <img src="./img/02.jpg" alt="image of work02">
+              </a>
+            </li>
+            <li class="contents__item">
+              <a href="" class="item__link">
+                <img src="./img/03.jpg" alt="image of work03">
+              </a>
+            </li>
+            <li class="contents__item">
+              <a href="" class="item__link">
+                <img src="./img/04.jpg" alt="image of work04">
+              </a>
+            </li>
+            <li class="contents__item">
+              <a href="" class="item__link">
+                <img src="./img/05.jpg" alt="image of work05">
+              </a>
+            </li>
+            <li class="contents__item">
+              <a href="" class="item__link">
+                <img src="./img/06.jpg" alt="image of work06">
+              </a>
+            </li>
+          </ul>
           <div class="contents__contact">
             <p class="contents__paragraph">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
@@ -82,43 +92,59 @@
 
       <section class="skills-progress">
         <div class="inner skills-progress--inner">
-          <h2 class="skills-progress__title">OUR SKILLS</h2>
-          <div class="skill__wrapper clearfix">
-            <figure class="skill__item">
-              <img src="./img/circle_01.png" alt="progress of JavaScript">
-              <figcaption class="skill__name">JavaScript</figcaption>
-            </figure>
-            <figure class="skill__item">
-              <img src="./img/circle_02.png" alt="progress of Bootstrap">
-              <figcaption class="skill__name">Bootstrap</figcaption>
-            </figure>
-            <figure class="skill__item">
-              <img src="./img/circle_03.png" alt="progress of WordPress">
-              <figcaption class="skill__name">WordPress</figcaption>
-            </figure>
-            <figure class="skill__item">
-              <img src="./img/circle_04.png" alt="progress of Photoshop">
-              <figcaption class="skill__name">Photoshop</figcaption>
-            </figure>
-          </div>
+          <h2 class="skills-progress__title is-raleway">OUR SKILLS</h2>
+          <ul class="skill__wrapper clearfix">
+            <li class="skill__item">
+              <figure>
+                <img src="./img/circle_01.png" alt="progress of JavaScript">
+                <figcaption class="skill__name">JavaScript</figcaption>
+              </figure>
+            </li>
+            <li class="skill__item">
+              <figure>
+                <img src="./img/circle_02.png" alt="progress of Bootstrap">
+                <figcaption class="skill__name">Bootstrap</figcaption>
+              </figure>
+            </li>
+            <li class="skill__item">
+              <figure>
+                <img src="./img/circle_03.png" alt="progress of WordPress">
+                <figcaption class="skill__name">WordPress</figcaption>
+              </figure>
+            </li>
+            <li class="skill__item">
+              <figure>
+                <img src="./img/circle_04.png" alt="progress of Photoshop">
+                <figcaption class="skill__name">Photoshop</figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
 
       <nav class="navigation">
-        <div class="inner navigation--inner">
-          <a href="" class="fa__nav">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="fa__nav">
-            <i class="fab fa-dribbble"></i>
-          </a>
-          <a href="" class="fa__nav">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="fa__nav">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+        <ul class="inner navigation--inner">
+          <li class="fa__nav">
+            <a href="" class="nav__link">
+              <i class="fab fa-facebook-f is-turquoise"></i>
+            </a>
+          </li>
+          <li class="fa__nav">
+            <a href="" class="nav__link">
+              <i class="fab fa-dribbble is-turquoise"></i>
+            </a>
+          </li>
+          <li class="fa__nav">
+            <a href="" class="nav__link">
+              <i class="fab fa-twitter is-turquoise"></i>
+            </a>
+          </li>
+          <li class="fa__nav">
+            <a href="" class="nav__link">
+              <i class="fas fa-envelope is-turquoise"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
 
     </main>
